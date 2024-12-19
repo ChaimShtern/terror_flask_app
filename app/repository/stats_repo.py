@@ -187,7 +187,6 @@ def attacks_percentage_change_by_region(session_maker, start_year, end_year):
         # שליפת נתונים עבור כל שנה
         attacks_period_1 = get_attacks_by_year(session, start_year)
         attacks_period_2 = get_attacks_by_year(session, end_year)
-    print(attacks_period_1, attacks_period_2)
 
     # ארגון המידע לפי אזור
     region_start_data = organize_region_data(attacks_period_1, "start_year")

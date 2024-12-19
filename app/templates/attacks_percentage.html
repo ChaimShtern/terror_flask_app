@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f1f9ffa91a93ac5cf118831e11a3d850 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f1f9ffa91a93ac5cf118831e11a3d850" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f1f9ffa91a93ac5cf118831e11a3d850 = L.map(
+                "map_f1f9ffa91a93ac5cf118831e11a3d850",
+                {
+                    center: [44.268598, -88.42844],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a7bf04910d6717da1ff9f97f4be684db = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_a7bf04910d6717da1ff9f97f4be684db.addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+            var marker_58fcc95573a94bb88ec242d2ff58b2b1 = L.marker(
+                [44.268598, -88.42844],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_794dde3df1fdfe74b1d852ec1cf307be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bfe61cc9f2b5b48a37b8b9131683404 = $(`<div id="html_1bfe61cc9f2b5b48a37b8b9131683404" style="width: 100.0%; height: 100.0%;">region: North America, num_attacks_start_year: 472, num_attacks_end_year:210, percentage_change: -55.50847457627118%</div>`)[0];
+                popup_794dde3df1fdfe74b1d852ec1cf307be.setContent(html_1bfe61cc9f2b5b48a37b8b9131683404);
+            
+        
+
+        marker_58fcc95573a94bb88ec242d2ff58b2b1.bindPopup(popup_794dde3df1fdfe74b1d852ec1cf307be)
+        ;
+
+        
+    
+    
+            var marker_9599cccaa72094a0a2a11414d96026ee = L.marker(
+                [33.946154, -118.082952],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_04b7d0fecba8dbcfecc048a698b88e79 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_39fe43416382b8455485c06432402bf7 = $(`<div id="html_39fe43416382b8455485c06432402bf7" style="width: 100.0%; height: 100.0%;">region: North America, num_attacks_start_year: 472, num_attacks_end_year:210, percentage_change: -55.50847457627118%</div>`)[0];
+                popup_04b7d0fecba8dbcfecc048a698b88e79.setContent(html_39fe43416382b8455485c06432402bf7);
+            
+        
+
+        marker_9599cccaa72094a0a2a11414d96026ee.bindPopup(popup_04b7d0fecba8dbcfecc048a698b88e79)
+        ;
+
+        
+    
+    
+            var marker_90f2715818682db62465dfcaa0028d34 = L.marker(
+                [38.908642, -77.015381],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_f7c4d056c2f84d2cf0d93c048e0e6f4f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a7ac32835a018346b37452ecf2eef7f = $(`<div id="html_6a7ac32835a018346b37452ecf2eef7f" style="width: 100.0%; height: 100.0%;">region: North America, num_attacks_start_year: 472, num_attacks_end_year:210, percentage_change: -55.50847457627118%</div>`)[0];
+                popup_f7c4d056c2f84d2cf0d93c048e0e6f4f.setContent(html_6a7ac32835a018346b37452ecf2eef7f);
+            
+        
+
+        marker_90f2715818682db62465dfcaa0028d34.bindPopup(popup_f7c4d056c2f84d2cf0d93c048e0e6f4f)
+        ;
+
+        
+    
+    
+            var marker_9b78020f8d39abd4383ef9ca5552e788 = L.marker(
+                [25.774591, -80.214195],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_d8fd0367f43b7d74c09fc9019a67f49a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01d2001859bd7979467a7176bf0c1ce0 = $(`<div id="html_01d2001859bd7979467a7176bf0c1ce0" style="width: 100.0%; height: 100.0%;">region: North America, num_attacks_start_year: 472, num_attacks_end_year:210, percentage_change: -55.50847457627118%</div>`)[0];
+                popup_d8fd0367f43b7d74c09fc9019a67f49a.setContent(html_01d2001859bd7979467a7176bf0c1ce0);
+            
+        
+
+        marker_9b78020f8d39abd4383ef9ca5552e788.bindPopup(popup_d8fd0367f43b7d74c09fc9019a67f49a)
+        ;
+
+        
+    
+    
+            var marker_f3db594ae2c4e19da06bdf013460fea9 = L.marker(
+                [40.617623, -74.417061],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_8219f4c862257c608b437d7be4712ebb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b36b3a354f1a848e8091f747423c9965 = $(`<div id="html_b36b3a354f1a848e8091f747423c9965" style="width: 100.0%; height: 100.0%;">region: North America, num_attacks_start_year: 472, num_attacks_end_year:210, percentage_change: -55.50847457627118%</div>`)[0];
+                popup_8219f4c862257c608b437d7be4712ebb.setContent(html_b36b3a354f1a848e8091f747423c9965);
+            
+        
+
+        marker_f3db594ae2c4e19da06bdf013460fea9.bindPopup(popup_8219f4c862257c608b437d7be4712ebb)
+        ;
+
+        
+    
+    
+            var marker_7fec05dccf95b2ff2cbfc0c709d958d5 = L.marker(
+                [-34.891151, -56.187214],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_01803ccf9b80f28f9cdc746053d3a35e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9afff98a302bc4b8298f3aa59facee3 = $(`<div id="html_a9afff98a302bc4b8298f3aa59facee3" style="width: 100.0%; height: 100.0%;">region: South America, num_attacks_start_year: 65, num_attacks_end_year:21, percentage_change: -67.6923076923077%</div>`)[0];
+                popup_01803ccf9b80f28f9cdc746053d3a35e.setContent(html_a9afff98a302bc4b8298f3aa59facee3);
+            
+        
+
+        marker_7fec05dccf95b2ff2cbfc0c709d958d5.bindPopup(popup_01803ccf9b80f28f9cdc746053d3a35e)
+        ;
+
+        
+    
+    
+            var marker_3d46e3db03a8e319098507a428c7cc1b = L.marker(
+                [10.063506, -69.334722],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_9c1bfc8dea98a02df80655e2900412a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f13f34d0a2998fb65ddb834e74f8626 = $(`<div id="html_2f13f34d0a2998fb65ddb834e74f8626" style="width: 100.0%; height: 100.0%;">region: South America, num_attacks_start_year: 65, num_attacks_end_year:21, percentage_change: -67.6923076923077%</div>`)[0];
+                popup_9c1bfc8dea98a02df80655e2900412a6.setContent(html_2f13f34d0a2998fb65ddb834e74f8626);
+            
+        
+
+        marker_3d46e3db03a8e319098507a428c7cc1b.bindPopup(popup_9c1bfc8dea98a02df80655e2900412a6)
+        ;
+
+        
+    
+    
+            var marker_6f18a5f40414462107878ca7cd8a0bce = L.marker(
+                [-26.808285, -65.21759],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_c63c842b175684f302aa46a766639256 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a20106bed0c43e66c578168f3f6b409c = $(`<div id="html_a20106bed0c43e66c578168f3f6b409c" style="width: 100.0%; height: 100.0%;">region: South America, num_attacks_start_year: 65, num_attacks_end_year:21, percentage_change: -67.6923076923077%</div>`)[0];
+                popup_c63c842b175684f302aa46a766639256.setContent(html_a20106bed0c43e66c578168f3f6b409c);
+            
+        
+
+        marker_6f18a5f40414462107878ca7cd8a0bce.bindPopup(popup_c63c842b175684f302aa46a766639256)
+        ;
+
+        
+    
+    
+            var marker_34b65ee1b135e67e8efbb8d8be1fae19 = L.marker(
+                [-34.864823, -57.908519],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_e79d1ec032db25919aed27baef2953d4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8586e94daa8ff136a6adae90e1b7eb09 = $(`<div id="html_8586e94daa8ff136a6adae90e1b7eb09" style="width: 100.0%; height: 100.0%;">region: South America, num_attacks_start_year: 65, num_attacks_end_year:21, percentage_change: -67.6923076923077%</div>`)[0];
+                popup_e79d1ec032db25919aed27baef2953d4.setContent(html_8586e94daa8ff136a6adae90e1b7eb09);
+            
+        
+
+        marker_34b65ee1b135e67e8efbb8d8be1fae19.bindPopup(popup_e79d1ec032db25919aed27baef2953d4)
+        ;
+
+        
+    
+    
+            var marker_5932e7d78141e6a72318be9e963688fd = L.marker(
+                [-22.908278, -43.197026],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_c939d19628f3b84e44b2b732160d013d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_694ba935f34ff193e0b05ad10e3e9b4d = $(`<div id="html_694ba935f34ff193e0b05ad10e3e9b4d" style="width: 100.0%; height: 100.0%;">region: South America, num_attacks_start_year: 65, num_attacks_end_year:21, percentage_change: -67.6923076923077%</div>`)[0];
+                popup_c939d19628f3b84e44b2b732160d013d.setContent(html_694ba935f34ff193e0b05ad10e3e9b4d);
+            
+        
+
+        marker_5932e7d78141e6a72318be9e963688fd.bindPopup(popup_c939d19628f3b84e44b2b732160d013d)
+        ;
+
+        
+    
+    
+            var marker_8aa7de3df32a84a2d508865474aa64cd = L.marker(
+                [15.185916, 120.54187],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_7b0a38f631758e64af0748d2eede0107 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce58e680d8356ba514240451dacdc2c6 = $(`<div id="html_ce58e680d8356ba514240451dacdc2c6" style="width: 100.0%; height: 100.0%;">region: Southeast Asia, num_attacks_start_year: 10, num_attacks_end_year:6, percentage_change: -40.0%</div>`)[0];
+                popup_7b0a38f631758e64af0748d2eede0107.setContent(html_ce58e680d8356ba514240451dacdc2c6);
+            
+        
+
+        marker_8aa7de3df32a84a2d508865474aa64cd.bindPopup(popup_7b0a38f631758e64af0748d2eede0107)
+        ;
+
+        
+    
+    
+            var marker_d70ecdd2f76c8d622672f5ec6da61826 = L.marker(
+                [14.596051, 120.978666],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_5e2bfa85effdd6de433e01859ef1d50e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c1db263c22aafd8b355d8d3fcabf40f0 = $(`<div id="html_c1db263c22aafd8b355d8d3fcabf40f0" style="width: 100.0%; height: 100.0%;">region: Southeast Asia, num_attacks_start_year: 10, num_attacks_end_year:6, percentage_change: -40.0%</div>`)[0];
+                popup_5e2bfa85effdd6de433e01859ef1d50e.setContent(html_c1db263c22aafd8b355d8d3fcabf40f0);
+            
+        
+
+        marker_d70ecdd2f76c8d622672f5ec6da61826.bindPopup(popup_5e2bfa85effdd6de433e01859ef1d50e)
+        ;
+
+        
+    
+    
+            var marker_30871b1df5a236d6491e416ee111483b = L.marker(
+                [14.67428, 121.057495],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_6113621d3bde36826745748923ced7bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_741c53ee6dcfa2d90924336c79c0cddb = $(`<div id="html_741c53ee6dcfa2d90924336c79c0cddb" style="width: 100.0%; height: 100.0%;">region: Southeast Asia, num_attacks_start_year: 10, num_attacks_end_year:6, percentage_change: -40.0%</div>`)[0];
+                popup_6113621d3bde36826745748923ced7bc.setContent(html_741c53ee6dcfa2d90924336c79c0cddb);
+            
+        
+
+        marker_30871b1df5a236d6491e416ee111483b.bindPopup(popup_6113621d3bde36826745748923ced7bc)
+        ;
+
+        
+    
+    
+            var marker_b656a01afccd637559e566120ef5d297 = L.marker(
+                [15.675051, 120.331618],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_c93184e7660d1429dfccc91e88a0f296 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d4505e5b6a2eb992421e9a780c88322 = $(`<div id="html_9d4505e5b6a2eb992421e9a780c88322" style="width: 100.0%; height: 100.0%;">region: Southeast Asia, num_attacks_start_year: 10, num_attacks_end_year:6, percentage_change: -40.0%</div>`)[0];
+                popup_c93184e7660d1429dfccc91e88a0f296.setContent(html_9d4505e5b6a2eb992421e9a780c88322);
+            
+        
+
+        marker_b656a01afccd637559e566120ef5d297.bindPopup(popup_c93184e7660d1429dfccc91e88a0f296)
+        ;
+
+        
+    
+    
+            var marker_346c5fd795bc153dd1823a6a9bca15ae = L.marker(
+                [11.586558, 122.753716],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_64f4f9a12d910fb2120d1aa646fcede9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f12734462ba0175123f982b0f0dd6dbf = $(`<div id="html_f12734462ba0175123f982b0f0dd6dbf" style="width: 100.0%; height: 100.0%;">region: Southeast Asia, num_attacks_start_year: 10, num_attacks_end_year:6, percentage_change: -40.0%</div>`)[0];
+                popup_64f4f9a12d910fb2120d1aa646fcede9.setContent(html_f12734462ba0175123f982b0f0dd6dbf);
+            
+        
+
+        marker_346c5fd795bc153dd1823a6a9bca15ae.bindPopup(popup_64f4f9a12d910fb2120d1aa646fcede9)
+        ;
+
+        
+    
+    
+            var marker_8fa2003e0e52607039e04f6a97c37b31 = L.marker(
+                [33.580412, 130.396361],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_dcd950f8908a509be85ce8c521322ee0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63847ec2aff630b211bf3696fee2cf58 = $(`<div id="html_63847ec2aff630b211bf3696fee2cf58" style="width: 100.0%; height: 100.0%;">region: East Asia, num_attacks_start_year: 2, num_attacks_end_year:0, percentage_change: -100.0%</div>`)[0];
+                popup_dcd950f8908a509be85ce8c521322ee0.setContent(html_63847ec2aff630b211bf3696fee2cf58);
+            
+        
+
+        marker_8fa2003e0e52607039e04f6a97c37b31.bindPopup(popup_dcd950f8908a509be85ce8c521322ee0)
+        ;
+
+        
+    
+    
+            var marker_f4e33be8231cf9d0df7bd30633c9af15 = L.marker(
+                [24.891115, 67.143311],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_5e9623abff9be6b7ea6d84a5e6b26c8d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c7a2b897d8901231d256643a9b9900c = $(`<div id="html_1c7a2b897d8901231d256643a9b9900c" style="width: 100.0%; height: 100.0%;">region: South Asia, num_attacks_start_year: 1, num_attacks_end_year:0, percentage_change: -100.0%</div>`)[0];
+                popup_5e9623abff9be6b7ea6d84a5e6b26c8d.setContent(html_1c7a2b897d8901231d256643a9b9900c);
+            
+        
+
+        marker_f4e33be8231cf9d0df7bd30633c9af15.bindPopup(popup_5e9623abff9be6b7ea6d84a5e6b26c8d)
+        ;
+
+        
+    
+    
+            var marker_13058a50c69a809af6576e4a592de7e7 = L.marker(
+                [38.395649, 27.135641],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_bebfdcd05624f7323e273c0c6bedd9c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_243ff45656f9cc381c15b96979e69e4f = $(`<div id="html_243ff45656f9cc381c15b96979e69e4f" style="width: 100.0%; height: 100.0%;">region: Middle East & North Africa, num_attacks_start_year: 28, num_attacks_end_year:42, percentage_change: 50.0%</div>`)[0];
+                popup_bebfdcd05624f7323e273c0c6bedd9c9.setContent(html_243ff45656f9cc381c15b96979e69e4f);
+            
+        
+
+        marker_13058a50c69a809af6576e4a592de7e7.bindPopup(popup_bebfdcd05624f7323e273c0c6bedd9c9)
+        ;
+
+        
+    
+    
+            var marker_441b3e8d2a64bbe57bf07c0ccdad048f = L.marker(
+                [31.198056, 29.919167],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_72196ccbdea4c052efb7ec317e3473a4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da10e4ca73b1e81a098274bbbfae9990 = $(`<div id="html_da10e4ca73b1e81a098274bbbfae9990" style="width: 100.0%; height: 100.0%;">region: Middle East & North Africa, num_attacks_start_year: 28, num_attacks_end_year:42, percentage_change: 50.0%</div>`)[0];
+                popup_72196ccbdea4c052efb7ec317e3473a4.setContent(html_da10e4ca73b1e81a098274bbbfae9990);
+            
+        
+
+        marker_441b3e8d2a64bbe57bf07c0ccdad048f.bindPopup(popup_72196ccbdea4c052efb7ec317e3473a4)
+        ;
+
+        
+    
+    
+            var marker_faf77b894ae6a014b3e2cc8b5349f891 = L.marker(
+                [31.950001, 35.933331],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_1a317579b76e67e92dc354e0a4cf2c7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c11382dd15ece4423c7cc1ba25cff10 = $(`<div id="html_1c11382dd15ece4423c7cc1ba25cff10" style="width: 100.0%; height: 100.0%;">region: Middle East & North Africa, num_attacks_start_year: 28, num_attacks_end_year:42, percentage_change: 50.0%</div>`)[0];
+                popup_1a317579b76e67e92dc354e0a4cf2c7f.setContent(html_1c11382dd15ece4423c7cc1ba25cff10);
+            
+        
+
+        marker_faf77b894ae6a014b3e2cc8b5349f891.bindPopup(popup_1a317579b76e67e92dc354e0a4cf2c7f)
+        ;
+
+        
+    
+    
+            var marker_f56342992185797c1f8f87dc95d890c6 = L.marker(
+                [35.724533, 51.40519],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_74819a665c4b9f68cbf2bd7abd647ba6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9869cdafe548f1b0ee0c8c952c1c6c2f = $(`<div id="html_9869cdafe548f1b0ee0c8c952c1c6c2f" style="width: 100.0%; height: 100.0%;">region: Middle East & North Africa, num_attacks_start_year: 28, num_attacks_end_year:42, percentage_change: 50.0%</div>`)[0];
+                popup_74819a665c4b9f68cbf2bd7abd647ba6.setContent(html_9869cdafe548f1b0ee0c8c952c1c6c2f);
+            
+        
+
+        marker_f56342992185797c1f8f87dc95d890c6.bindPopup(popup_74819a665c4b9f68cbf2bd7abd647ba6)
+        ;
+
+        
+    
+    
+            var marker_8cc5ae731a51e53aeedaf28a7bf4846f = L.marker(
+                [33.888523, 35.503513],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_0f39e95a3e350cba6d0379ae3c9bb09b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_964f8067b0336930bd33172eb515ab5b = $(`<div id="html_964f8067b0336930bd33172eb515ab5b" style="width: 100.0%; height: 100.0%;">region: Middle East & North Africa, num_attacks_start_year: 28, num_attacks_end_year:42, percentage_change: 50.0%</div>`)[0];
+                popup_0f39e95a3e350cba6d0379ae3c9bb09b.setContent(html_964f8067b0336930bd33172eb515ab5b);
+            
+        
+
+        marker_8cc5ae731a51e53aeedaf28a7bf4846f.bindPopup(popup_0f39e95a3e350cba6d0379ae3c9bb09b)
+        ;
+
+        
+    
+    
+            var marker_d563eebb7c7ad5ececa573066d0f3140 = L.marker(
+                [14.622869, -90.529068],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_0bcb9f52db92e5addcb43ae89e128e1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed4899bbb06f5ad16b8feff34e4d4af2 = $(`<div id="html_ed4899bbb06f5ad16b8feff34e4d4af2" style="width: 100.0%; height: 100.0%;">region: Central America & Caribbean, num_attacks_start_year: 7, num_attacks_end_year:5, percentage_change: -28.57142857142857%</div>`)[0];
+                popup_0bcb9f52db92e5addcb43ae89e128e1f.setContent(html_ed4899bbb06f5ad16b8feff34e4d4af2);
+            
+        
+
+        marker_d563eebb7c7ad5ececa573066d0f3140.bindPopup(popup_0bcb9f52db92e5addcb43ae89e128e1f)
+        ;
+
+        
+    
+    
+            var marker_f2012c778ac5b286d34c4f82491f6782 = L.marker(
+                [12.103822, -86.267014],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_5d4317e0ade6b623fe2e39dfcf83030a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c93020a59cf29e4169c19859e7b6332 = $(`<div id="html_9c93020a59cf29e4169c19859e7b6332" style="width: 100.0%; height: 100.0%;">region: Central America & Caribbean, num_attacks_start_year: 7, num_attacks_end_year:5, percentage_change: -28.57142857142857%</div>`)[0];
+                popup_5d4317e0ade6b623fe2e39dfcf83030a.setContent(html_9c93020a59cf29e4169c19859e7b6332);
+            
+        
+
+        marker_f2012c778ac5b286d34c4f82491f6782.bindPopup(popup_5d4317e0ade6b623fe2e39dfcf83030a)
+        ;
+
+        
+    
+    
+            var marker_65f5171ba424787eec39514629f82487 = L.marker(
+                [18.456792, -69.951164],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_c1507df05009c363835d38dd134307c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_954d60173789a98326a929da9572c8e9 = $(`<div id="html_954d60173789a98326a929da9572c8e9" style="width: 100.0%; height: 100.0%;">region: Central America & Caribbean, num_attacks_start_year: 7, num_attacks_end_year:5, percentage_change: -28.57142857142857%</div>`)[0];
+                popup_c1507df05009c363835d38dd134307c1.setContent(html_954d60173789a98326a929da9572c8e9);
+            
+        
+
+        marker_65f5171ba424787eec39514629f82487.bindPopup(popup_c1507df05009c363835d38dd134307c1)
+        ;
+
+        
+    
+    
+            var marker_6aaa1913607e9ec4bac09233f1829226 = L.marker(
+                [51.504387, -0.140041],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_de1c3446d94933ef86f35ad5110f9e53 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3186846db479f8ba956d604a384c00db = $(`<div id="html_3186846db479f8ba956d604a384c00db" style="width: 100.0%; height: 100.0%;">region: Western Europe, num_attacks_start_year: 50, num_attacks_end_year:59, percentage_change: 18.0%</div>`)[0];
+                popup_de1c3446d94933ef86f35ad5110f9e53.setContent(html_3186846db479f8ba956d604a384c00db);
+            
+        
+
+        marker_6aaa1913607e9ec4bac09233f1829226.bindPopup(popup_de1c3446d94933ef86f35ad5110f9e53)
+        ;
+
+        
+    
+    
+            var marker_20e5a2da4df5309a21e6c9013c45295a = L.marker(
+                [49.294642, 8.69774],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_22dbf105bf1846d31b58745a25ac1174 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18ffc3e0efbb7319fab57e57519e2b7f = $(`<div id="html_18ffc3e0efbb7319fab57e57519e2b7f" style="width: 100.0%; height: 100.0%;">region: Western Europe, num_attacks_start_year: 50, num_attacks_end_year:59, percentage_change: 18.0%</div>`)[0];
+                popup_22dbf105bf1846d31b58745a25ac1174.setContent(html_18ffc3e0efbb7319fab57e57519e2b7f);
+            
+        
+
+        marker_20e5a2da4df5309a21e6c9013c45295a.bindPopup(popup_22dbf105bf1846d31b58745a25ac1174)
+        ;
+
+        
+    
+    
+            var marker_8b12a73d443a5076d380ad6b7aab88f2 = L.marker(
+                [50.836426, 4.367415],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_25d8082cd349cbbd92bc25a6a33c02c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_61164232f6d9971e253a017ddab73b92 = $(`<div id="html_61164232f6d9971e253a017ddab73b92" style="width: 100.0%; height: 100.0%;">region: Western Europe, num_attacks_start_year: 50, num_attacks_end_year:59, percentage_change: 18.0%</div>`)[0];
+                popup_25d8082cd349cbbd92bc25a6a33c02c2.setContent(html_61164232f6d9971e253a017ddab73b92);
+            
+        
+
+        marker_8b12a73d443a5076d380ad6b7aab88f2.bindPopup(popup_25d8082cd349cbbd92bc25a6a33c02c2)
+        ;
+
+        
+    
+    
+            var marker_ec98ac9793d714f19d77f780a0bb0683 = L.marker(
+                [37.99749, 23.762728],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_a2f35d984df39554c3917a03a4495d38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db844e18b14d4c8202eb462b5f574add = $(`<div id="html_db844e18b14d4c8202eb462b5f574add" style="width: 100.0%; height: 100.0%;">region: Western Europe, num_attacks_start_year: 50, num_attacks_end_year:59, percentage_change: 18.0%</div>`)[0];
+                popup_a2f35d984df39554c3917a03a4495d38.setContent(html_db844e18b14d4c8202eb462b5f574add);
+            
+        
+
+        marker_ec98ac9793d714f19d77f780a0bb0683.bindPopup(popup_a2f35d984df39554c3917a03a4495d38)
+        ;
+
+        
+    
+    
+            var marker_1265807af4a5fe390fd60b7f0b5be0e0 = L.marker(
+                [54.607712, -5.95621],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_ca5b687cd4b571aa96a267f1de1c1bdb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b8e24382207d64ed7dbfd15738c24bde = $(`<div id="html_b8e24382207d64ed7dbfd15738c24bde" style="width: 100.0%; height: 100.0%;">region: Western Europe, num_attacks_start_year: 50, num_attacks_end_year:59, percentage_change: 18.0%</div>`)[0];
+                popup_ca5b687cd4b571aa96a267f1de1c1bdb.setContent(html_b8e24382207d64ed7dbfd15738c24bde);
+            
+        
+
+        marker_1265807af4a5fe390fd60b7f0b5be0e0.bindPopup(popup_ca5b687cd4b571aa96a267f1de1c1bdb)
+        ;
+
+        
+    
+    
+            var marker_abdca1de6c75f3927b00e1133fad5b2b = L.marker(
+                [-37.813187, 144.96298],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_bdabca05c6cf4d26fa502caffbd588f8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b150383e0ccc636d69b9ca24c7cb2f6 = $(`<div id="html_1b150383e0ccc636d69b9ca24c7cb2f6" style="width: 100.0%; height: 100.0%;">region: Australasia & Oceania, num_attacks_start_year: 1, num_attacks_end_year:0, percentage_change: -100.0%</div>`)[0];
+                popup_bdabca05c6cf4d26fa502caffbd588f8.setContent(html_1b150383e0ccc636d69b9ca24c7cb2f6);
+            
+        
+
+        marker_abdca1de6c75f3927b00e1133fad5b2b.bindPopup(popup_bdabca05c6cf4d26fa502caffbd588f8)
+        ;
+
+        
+    
+    
+            var marker_d2f6ae63a02412d76945e1371813d432 = L.marker(
+                [11.583513, 37.397019],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_3b1ad8920e3f33561735c8bce0c91d56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45a99d5c4d465f35080167c1b9d2b06d = $(`<div id="html_45a99d5c4d465f35080167c1b9d2b06d" style="width: 100.0%; height: 100.0%;">region: Sub-Saharan Africa, num_attacks_start_year: 3, num_attacks_end_year:2, percentage_change: -33.33333333333333%</div>`)[0];
+                popup_3b1ad8920e3f33561735c8bce0c91d56.setContent(html_45a99d5c4d465f35080167c1b9d2b06d);
+            
+        
+
+        marker_d2f6ae63a02412d76945e1371813d432.bindPopup(popup_3b1ad8920e3f33561735c8bce0c91d56)
+        ;
+
+        
+    
+    
+            var marker_0c78da29517ccd43cc37b9c750801643 = L.marker(
+                [52.50153, 13.401851],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_936d730d786e3bafefb7f7e05f13d822 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08a0dd9a9f767633a7d174d082d697ec = $(`<div id="html_08a0dd9a9f767633a7d174d082d697ec" style="width: 100.0%; height: 100.0%;">region: Eastern Europe, num_attacks_start_year: 12, num_attacks_end_year:4, percentage_change: -66.66666666666666%</div>`)[0];
+                popup_936d730d786e3bafefb7f7e05f13d822.setContent(html_08a0dd9a9f767633a7d174d082d697ec);
+            
+        
+
+        marker_0c78da29517ccd43cc37b9c750801643.bindPopup(popup_936d730d786e3bafefb7f7e05f13d822)
+        ;
+
+        
+    
+    
+            var marker_7ed84b6555a2ac2e7c53f91b1800ceff = L.marker(
+                [52.50153, 13.401851],
+                {
+}
+            ).addTo(map_f1f9ffa91a93ac5cf118831e11a3d850);
+        
+    
+        var popup_81e1cb94077f9b76e46c5ec240d7ad43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db3a5316fe1fca86a7ee756e7e7e11b3 = $(`<div id="html_db3a5316fe1fca86a7ee756e7e7e11b3" style="width: 100.0%; height: 100.0%;">region: Eastern Europe, num_attacks_start_year: 12, num_attacks_end_year:4, percentage_change: -66.66666666666666%</div>`)[0];
+                popup_81e1cb94077f9b76e46c5ec240d7ad43.setContent(html_db3a5316fe1fca86a7ee756e7e7e11b3);
+            
+        
+
+        marker_7ed84b6555a2ac2e7c53f91b1800ceff.bindPopup(popup_81e1cb94077f9b76e46c5ec240d7ad43)
+        ;
+
+        
+    
+</script>
+</html>
