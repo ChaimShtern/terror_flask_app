@@ -3,7 +3,7 @@ import toolz as t
 
 
 # 11
-def get_groups_with_same_target():
+def groups_with_same_target():
     with driver.session() as session:
         query = """ 
                 match  (g:Group) -[rel:ATTACKED]- (c:Country)
@@ -17,7 +17,7 @@ def get_groups_with_same_target():
 
 
 # 14
-def get_groups_with_same_strartegy():
+def groups_with_same_strartegy():
     with driver.session() as session:
         query = """ 
                 match  (g:Group) -[rel:ATTACKED]- (c:Country)
@@ -31,7 +31,7 @@ def get_groups_with_same_strartegy():
 
 
 # 15
-def get_groups_with_same_perpes():
+def groups_with_same_perpes():
     with driver.session() as session:
         query = """
                match  (g:Group) -[rel:ATTACKED]- (c:Country)
@@ -45,7 +45,7 @@ def get_groups_with_same_perpes():
 
 
 # 16
-def get_high_groups():
+def high_groups():
     with driver.session() as session:
         query = """match  (g:Group) -[rel:ATTACKED]- (c:Country) return  g.name as group, count(DISTINCT c) as country_count, 
         count(DISTINCT rel.target) as target_count, count(DISTINCT rel.type) as type_count, collect(DISTINCT c) as countries"""
@@ -58,7 +58,7 @@ def get_high_groups():
 
 
 # 18
-def get_groups_with_wide_influence():
+def groups_with_wide_influence():
     with driver.session() as session:
         query = """
                  match  (g:Group) -[rel:ATTACKED]- (c:Country)
