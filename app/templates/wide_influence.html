@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1dc417afbc357f3b48f99e163f865ac3 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1dc417afbc357f3b48f99e163f865ac3" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1dc417afbc357f3b48f99e163f865ac3 = L.map(
+                "map_1dc417afbc357f3b48f99e163f865ac3",
+                {
+                    center: [-70.6667, -70.6667],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_42fb27c346a83e8beb210604caef811e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_42fb27c346a83e8beb210604caef811e.addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+            var marker_0e446d512e9f8ae637953ba4f7a2f7cc = L.marker(
+                [-70.6667, -70.6667],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_dbc1e011d4df804ba523f0d56cef90fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a9c859983affd88c0b032671c9a07e87 = $(`<div id="html_a9c859983affd88c0b032671c9a07e87" style="width: 100.0%; height: 100.0%;">group_count: 4,   groups: ['Unknown', 'Tony El Pelou Band', 'Dominican Popular Movement (MPD)', 'MANO-D'],</div>`)[0];
+                popup_dbc1e011d4df804ba523f0d56cef90fa.setContent(html_a9c859983affd88c0b032671c9a07e87);
+            
+        
+
+        marker_0e446d512e9f8ae637953ba4f7a2f7cc.bindPopup(popup_dbc1e011d4df804ba523f0d56cef90fa)
+        ;
+
+        
+    
+    
+            var marker_9a0561be65af5f4bef51d0f6555836a1 = L.marker(
+                [-102.0, -102.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_e14e2af4abf2caea3727f7546447aa50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86d7c6e976e170240a0db3f43d749f9d = $(`<div id="html_86d7c6e976e170240a0db3f43d749f9d" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Unknown', '23rd of September Communist League'],</div>`)[0];
+                popup_e14e2af4abf2caea3727f7546447aa50.setContent(html_86d7c6e976e170240a0db3f43d749f9d);
+            
+        
+
+        marker_9a0561be65af5f4bef51d0f6555836a1.bindPopup(popup_e14e2af4abf2caea3727f7546447aa50)
+        ;
+
+        
+    
+    
+            var marker_2ad07d733f47e8fe3669422919593a07 = L.marker(
+                [122.0, 122.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_076055c91a244859d44763838cff87ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d29e7d2187c53d24ef047e67f31ef15c = $(`<div id="html_d29e7d2187c53d24ef047e67f31ef15c" style="width: 100.0%; height: 100.0%;">group_count: 4,   groups: ['Students', "New People's Army (NPA)", 'Unknown', 'Kabataang Makabayan (KM)'],</div>`)[0];
+                popup_076055c91a244859d44763838cff87ae.setContent(html_d29e7d2187c53d24ef047e67f31ef15c);
+            
+        
+
+        marker_2ad07d733f47e8fe3669422919593a07.bindPopup(popup_076055c91a244859d44763838cff87ae)
+        ;
+
+        
+    
+    
+            var marker_a8cb7986d2c8552e1545c553fe043287 = L.marker(
+                [22.0, 22.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_11a9dda482a2b5f807976ddede946f2b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a5e85995536f621d2d74b328080240b = $(`<div id="html_2a5e85995536f621d2d74b328080240b" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Unknown', 'Arabs'],</div>`)[0];
+                popup_11a9dda482a2b5f807976ddede946f2b.setContent(html_2a5e85995536f621d2d74b328080240b);
+            
+        
+
+        marker_a8cb7986d2c8552e1545c553fe043287.bindPopup(popup_11a9dda482a2b5f807976ddede946f2b)
+        ;
+
+        
+    
+    
+            var marker_c1a2eb3ba139deeefb4c89d9146fb1ce = L.marker(
+                [138.0, 138.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_4c5ce4c02052991d35ee0f4ecc5402c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75b5ae11d35948fc4491b2e4b98990a0 = $(`<div id="html_75b5ae11d35948fc4491b2e4b98990a0" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Japanese Red Army (JRA)', 'Unknown'],</div>`)[0];
+                popup_4c5ce4c02052991d35ee0f4ecc5402c5.setContent(html_75b5ae11d35948fc4491b2e4b98990a0);
+            
+        
+
+        marker_c1a2eb3ba139deeefb4c89d9146fb1ce.bindPopup(popup_4c5ce4c02052991d35ee0f4ecc5402c5)
+        ;
+
+        
+    
+    
+            var marker_61e3c486e3241db8d0b758981f23c8bd = L.marker(
+                [-97.0, -97.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_5048e2fa0e7a35c394f7eaec96d2ed38 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_846cd5166fcc9d1c710839575fbdaa43 = $(`<div id="html_846cd5166fcc9d1c710839575fbdaa43" style="width: 100.0%; height: 100.0%;">group_count: 44,   groups: ['Armed Commandos of Liberation', 'Ku Klux Klan', 'Unknown', 'Black Liberation Army', 'Jewish Defense League (JDL)', 'Chicano Liberation Front', 'Secret Cuban Government', 'Chicano Radicals', 'Left-Wing Militants', 'Regulators', 'Students for a Democratic Society', "People's Revolutionary Party", 'Left-wing extremists', 'Student Radicals', 'Black Panthers', 'Black Revolutionary Assault Team', 'Puerto Rican Resistance Movement', 'Puerto Rican Nationalists', 'Black Afro Militant Movement', 'Neo-Nazi extremists', 'BAY Bombers', 'Strikers', 'Black Nationalists', 'Armed Revolutionary Independence Movement (MIRA)', 'Weather Underground, Weathermen', 'Quartermoon Society', 'Welsh Extremists', 'Right-wing extremists', "New Year's Gang", 'Revolutionary Action Party', 'White Panther Party', 'Jonathan Jackson Brigade', "American Servicemen's Union (ASU)", 'White extremists', 'Seattle Liberation Front', 'Revolutionary Force Seven', 'National Committee to Combat Fascism', 'Cuban Action', 'Stop the War Coalition', 'Revolutionary Force 26', 'The World United Formosans for Independence (WUFI)', 'Cuban Exiles', 'New World Liberation Front (NWLF)', 'Revolutionary Force 9'],</div>`)[0];
+                popup_5048e2fa0e7a35c394f7eaec96d2ed38.setContent(html_846cd5166fcc9d1c710839575fbdaa43);
+            
+        
+
+        marker_61e3c486e3241db8d0b758981f23c8bd.bindPopup(popup_5048e2fa0e7a35c394f7eaec96d2ed38)
+        ;
+
+        
+    
+    
+            var marker_4ceb7df1b240ad6284f554d44161204f = L.marker(
+                [-56.0, -56.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_e85bf08b5d2290916f627e26c5af9697 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02a1b79c058f38ffa2388d1b53574ebc = $(`<div id="html_02a1b79c058f38ffa2388d1b53574ebc" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Tupamaros (Uruguay)'],</div>`)[0];
+                popup_e85bf08b5d2290916f627e26c5af9697.setContent(html_02a1b79c058f38ffa2388d1b53574ebc);
+            
+        
+
+        marker_4ceb7df1b240ad6284f554d44161204f.bindPopup(popup_e85bf08b5d2290916f627e26c5af9697)
+        ;
+
+        
+    
+    
+            var marker_9216f695f9a8675560d9583dae81a012 = L.marker(
+                [12.8333, 12.8333],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_59002a3471b38365e3b91ecd3e18ad4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_016a3dceeba1f1779c10566aa1c6cb6d = $(`<div id="html_016a3dceeba1f1779c10566aa1c6cb6d" style="width: 100.0%; height: 100.0%;">group_count: 3,   groups: ['Popular Front for the Liberation of Palestine (PFLP)', 'Unknown', 'Eritrean Liberation Front'],</div>`)[0];
+                popup_59002a3471b38365e3b91ecd3e18ad4d.setContent(html_016a3dceeba1f1779c10566aa1c6cb6d);
+            
+        
+
+        marker_9216f695f9a8675560d9583dae81a012.bindPopup(popup_59002a3471b38365e3b91ecd3e18ad4d)
+        ;
+
+        
+    
+    
+            var marker_837463cfed0e66579efb0ad5b971b446 = L.marker(
+                [38.0, 38.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_766c0fb023ca5ef8384df60afcadedaf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ee91908e2d53f1b0421b4c8df4009111 = $(`<div id="html_ee91908e2d53f1b0421b4c8df4009111" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Eritrean Liberation Front'],</div>`)[0];
+                popup_766c0fb023ca5ef8384df60afcadedaf.setContent(html_ee91908e2d53f1b0421b4c8df4009111);
+            
+        
+
+        marker_837463cfed0e66579efb0ad5b971b446.bindPopup(popup_766c0fb023ca5ef8384df60afcadedaf)
+        ;
+
+        
+    
+    
+            var marker_a8b0faa4d3cdade1e72fadabb8ade458 = L.marker(
+                [-90.25, -90.25],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_a7b0927751c295c888d9f9e4fcfbc16f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4bd4cce792d48a30f0080a84651b452 = $(`<div id="html_a4bd4cce792d48a30f0080a84651b452" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Unknown', 'Rebel Armed Forces of Guatemala (FAR)'],</div>`)[0];
+                popup_a7b0927751c295c888d9f9e4fcfbc16f.setContent(html_a4bd4cce792d48a30f0080a84651b452);
+            
+        
+
+        marker_a8b0faa4d3cdade1e72fadabb8ade458.bindPopup(popup_a7b0927751c295c888d9f9e4fcfbc16f)
+        ;
+
+        
+    
+    
+            var marker_71d9f8e3afcd9a57bb0b07308717b74d = L.marker(
+                [-66.0, -66.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_5d2c05b1e38b6d20a9bc694656f5d2f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72ee3de1c32c2b5708430db3a7bb22a4 = $(`<div id="html_72ee3de1c32c2b5708430db3a7bb22a4" style="width: 100.0%; height: 100.0%;">group_count: 3,   groups: ['Unknown', 'Movement of the Revolutionary Left (MIR) (Venezuela)', 'Armed Forces of National Liberation- Venezuela (FALN)'],</div>`)[0];
+                popup_5d2c05b1e38b6d20a9bc694656f5d2f5.setContent(html_72ee3de1c32c2b5708430db3a7bb22a4);
+            
+        
+
+        marker_71d9f8e3afcd9a57bb0b07308717b74d.bindPopup(popup_5d2c05b1e38b6d20a9bc694656f5d2f5)
+        ;
+
+        
+    
+    
+            var marker_c5b8eed32458d3e6979f8af1e09e1c7d = L.marker(
+                [8.0, 8.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_77cef37dfacef1a8ce1e70aae6848079 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e46ddb249b56dbd71ca0750e1468fc12 = $(`<div id="html_e46ddb249b56dbd71ca0750e1468fc12" style="width: 100.0%; height: 100.0%;">group_count: 3,   groups: ['Popular Front for the Liberation of Palestine (PFLP)', '1st of May Group', 'Popular Front for the Liberation of Palestine, Gen Cmd (PFLP-GC)'],</div>`)[0];
+                popup_77cef37dfacef1a8ce1e70aae6848079.setContent(html_e46ddb249b56dbd71ca0750e1468fc12);
+            
+        
+
+        marker_c5b8eed32458d3e6979f8af1e09e1c7d.bindPopup(popup_77cef37dfacef1a8ce1e70aae6848079)
+        ;
+
+        
+    
+    
+            var marker_e1b3330e98cbf07eb5a408ce8a63cd88 = L.marker(
+                [36.0, 36.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_52af68eb7fbe55af2b5ed381117e15c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecb01fe2723b8d16ce23677ac4fdf756 = $(`<div id="html_ecb01fe2723b8d16ce23677ac4fdf756" style="width: 100.0%; height: 100.0%;">group_count: 4,   groups: ['Popular Front for the Liberation of Palestine (PFLP)', 'Palestine Liberation Organization (PLO)', 'Palestinians', 'Unknown'],</div>`)[0];
+                popup_52af68eb7fbe55af2b5ed381117e15c9.setContent(html_ecb01fe2723b8d16ce23677ac4fdf756);
+            
+        
+
+        marker_e1b3330e98cbf07eb5a408ce8a63cd88.bindPopup(popup_52af68eb7fbe55af2b5ed381117e15c9)
+        ;
+
+        
+    
+    
+            var marker_b63a04edb206aae87b2d64bf21ffb64e = L.marker(
+                [-4.0, -4.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_bca1f5a08b341db21389c8ff61af5405 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa5c899a58b71f0af9cec077bfb007eb = $(`<div id="html_fa5c899a58b71f0af9cec077bfb007eb" style="width: 100.0%; height: 100.0%;">group_count: 7,   groups: ['Black September', 'Unknown', 'GAC', 'Revolutionary Communist League (LCR) (Spain)', 'Catalan Liberation Front (FAC)', 'Basque Fatherland and Freedom (ETA)', '1st of May Group'],</div>`)[0];
+                popup_bca1f5a08b341db21389c8ff61af5405.setContent(html_fa5c899a58b71f0af9cec077bfb007eb);
+            
+        
+
+        marker_b63a04edb206aae87b2d64bf21ffb64e.bindPopup(popup_bca1f5a08b341db21389c8ff61af5405)
+        ;
+
+        
+    
+    
+            var marker_56747ad24697ae33f175addde6b8b1e9 = L.marker(
+                [-55.0, -55.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_e1deed1b00fd111c285900bd4f3a2fe5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef73587b123081315087553d5762cad3 = $(`<div id="html_ef73587b123081315087553d5762cad3" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Unknown', 'Popular Revolutionary Vanguard (VPR)'],</div>`)[0];
+                popup_e1deed1b00fd111c285900bd4f3a2fe5.setContent(html_ef73587b123081315087553d5762cad3);
+            
+        
+
+        marker_56747ad24697ae33f175addde6b8b1e9.bindPopup(popup_e1deed1b00fd111c285900bd4f3a2fe5)
+        ;
+
+        
+    
+    
+            var marker_ee0458391d65828d85d5acddc976c630 = L.marker(
+                [30.0, 30.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_47b4e0894f63fbbb95bac24ecf5569b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26656098b8d6c25273b44921b0a0ecd5 = $(`<div id="html_26656098b8d6c25273b44921b0a0ecd5" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Unknown'],</div>`)[0];
+                popup_47b4e0894f63fbbb95bac24ecf5569b2.setContent(html_26656098b8d6c25273b44921b0a0ecd5);
+            
+        
+
+        marker_ee0458391d65828d85d5acddc976c630.bindPopup(popup_47b4e0894f63fbbb95bac24ecf5569b2)
+        ;
+
+        
+    
+    
+            var marker_592113954695226d89076a0d2474fd7d = L.marker(
+                [-64.0, -64.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_21b540b58c732f28d00963074b7753d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62adbf41949e8cabbbafb7e0ab12c013 = $(`<div id="html_62adbf41949e8cabbbafb7e0ab12c013" style="width: 100.0%; height: 100.0%;">group_count: 7,   groups: ['Peronist Armed Forces (FAP)', 'Ejercito Revolucionaria del Pueblo (ERP) (Argentina)', 'Revolutionary Armed Forces- Argentina (FAR-A)', 'Argentine Liberation Front (FAL)', 'Montoneros (Argentina)', 'Unknown', 'Argentine National Organization Movement (MANO)'],</div>`)[0];
+                popup_21b540b58c732f28d00963074b7753d9.setContent(html_62adbf41949e8cabbbafb7e0ab12c013);
+            
+        
+
+        marker_592113954695226d89076a0d2474fd7d.bindPopup(popup_21b540b58c732f28d00963074b7753d9)
+        ;
+
+        
+    
+    
+            var marker_5332ed81c63589a82f983937beda9cf1 = L.marker(
+                [35.8333, 35.8333],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_e303cf8c952ef16d4f7053d4db724eb9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc63a8c3acd9c2acc49c0b18838cb00d = $(`<div id="html_fc63a8c3acd9c2acc49c0b18838cb00d" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Popular Front for the Liberation of Palestine (PFLP)'],</div>`)[0];
+                popup_e303cf8c952ef16d4f7053d4db724eb9.setContent(html_fc63a8c3acd9c2acc49c0b18838cb00d);
+            
+        
+
+        marker_5332ed81c63589a82f983937beda9cf1.bindPopup(popup_e303cf8c952ef16d4f7053d4db724eb9)
+        ;
+
+        
+    
+    
+            var marker_2e7b7fd023474b614fb06a8bf2d2a0ea = L.marker(
+                [-8.0, -8.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_09de44b81d6b1e8f4917c71abcec5e23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43052dd7249f6a52ea7215f6985a3113 = $(`<div id="html_43052dd7249f6a52ea7215f6985a3113" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Saor Eire (Irish Republican Group)'],</div>`)[0];
+                popup_09de44b81d6b1e8f4917c71abcec5e23.setContent(html_43052dd7249f6a52ea7215f6985a3113);
+            
+        
+
+        marker_2e7b7fd023474b614fb06a8bf2d2a0ea.bindPopup(popup_09de44b81d6b1e8f4917c71abcec5e23)
+        ;
+
+        
+    
+    
+            var marker_926bd90f6d19b3ad55f2412dc9e9daca = L.marker(
+                [35.0, 35.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_52be7774871959d69f7c954ec66b0f05 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4046f5d3a410392207ca22e0377c189 = $(`<div id="html_e4046f5d3a410392207ca22e0377c189" style="width: 100.0%; height: 100.0%;">group_count: 5,   groups: ['RYF', "Turkish People's Liberation Army", 'Unknown', "Turkish People's Liberation Front (TPLF)(THKP-C)", 'Palestinians'],</div>`)[0];
+                popup_52be7774871959d69f7c954ec66b0f05.setContent(html_e4046f5d3a410392207ca22e0377c189);
+            
+        
+
+        marker_926bd90f6d19b3ad55f2412dc9e9daca.bindPopup(popup_52be7774871959d69f7c954ec66b0f05)
+        ;
+
+        
+    
+    
+            var marker_ba32ef10ccce11efe146218fb1492441 = L.marker(
+                [-58.0, -58.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_fb5a19bd3add4eb040c16e8f4570184d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3875e88129b365dcace3877838ec241e = $(`<div id="html_3875e88129b365dcace3877838ec241e" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Palestinians'],</div>`)[0];
+                popup_fb5a19bd3add4eb040c16e8f4570184d.setContent(html_3875e88129b365dcace3877838ec241e);
+            
+        
+
+        marker_ba32ef10ccce11efe146218fb1492441.bindPopup(popup_fb5a19bd3add4eb040c16e8f4570184d)
+        ;
+
+        
+    
+    
+            var marker_184da35e948260331714e4718a666f57 = L.marker(
+                [-2.0, -2.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_490ae507e99c78f939c1a226cd81dede = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30996c4babc289105b339c38de7d9396 = $(`<div id="html_30996c4babc289105b339c38de7d9396" style="width: 100.0%; height: 100.0%;">group_count: 8,   groups: ['Irish Republican Army (IRA)', 'Unknown', 'Irish Republican Extremists', 'Official Irish Republican Army (OIRA)', 'Protestant extremists', '1st of May Group', 'Jewish Defense League (JDL)', 'Ulster Volunteer Force (UVF)'],</div>`)[0];
+                popup_490ae507e99c78f939c1a226cd81dede.setContent(html_30996c4babc289105b339c38de7d9396);
+            
+        
+
+        marker_184da35e948260331714e4718a666f57.bindPopup(popup_490ae507e99c78f939c1a226cd81dede)
+        ;
+
+        
+    
+    
+            var marker_8068046ca01926f1b8fd962bb4aba9d2 = L.marker(
+                [-72.0, -72.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_7a2177ace1a03cfb90cb2d1f6f3c4b48 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ad66a76aa74c7fe42e0c44953c4fafb = $(`<div id="html_6ad66a76aa74c7fe42e0c44953c4fafb" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Unknown'],</div>`)[0];
+                popup_7a2177ace1a03cfb90cb2d1f6f3c4b48.setContent(html_6ad66a76aa74c7fe42e0c44953c4fafb);
+            
+        
+
+        marker_8068046ca01926f1b8fd962bb4aba9d2.bindPopup(popup_7a2177ace1a03cfb90cb2d1f6f3c4b48)
+        ;
+
+        
+    
+    
+            var marker_b3023431c31f754fca28f1924d053703 = L.marker(
+                [-65.0, -65.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_8af1ca97fde185ff47ef695d24c00c97 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_20eebfb654854e5e4d285b51dc372f81 = $(`<div id="html_20eebfb654854e5e4d285b51dc372f81" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Unknown', 'Ejercito de Liberacion Nacional (Bolivia)'],</div>`)[0];
+                popup_8af1ca97fde185ff47ef695d24c00c97.setContent(html_20eebfb654854e5e4d285b51dc372f81);
+            
+        
+
+        marker_b3023431c31f754fca28f1924d053703.bindPopup(popup_8af1ca97fde185ff47ef695d24c00c97)
+        ;
+
+        
+    
+    
+            var marker_2688850676968a501b38d5d2f9db1040 = L.marker(
+                [-85.0, -85.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_5a8ae66b96ca50373e3a3f29c31da392 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb887a5350674c90df583dec23ebd088 = $(`<div id="html_eb887a5350674c90df583dec23ebd088" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Sandinista National Liberation Front (FSLN)'],</div>`)[0];
+                popup_5a8ae66b96ca50373e3a3f29c31da392.setContent(html_eb887a5350674c90df583dec23ebd088);
+            
+        
+
+        marker_2688850676968a501b38d5d2f9db1040.bindPopup(popup_5a8ae66b96ca50373e3a3f29c31da392)
+        ;
+
+        
+    
+    
+            var marker_46e74c1ef5aa25fdd9e7776c42bef938 = L.marker(
+                [5.75, 5.75],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_466528498dfe88669e860966c5cecdbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e1dd2712f85a727f4be85fa58329fff4 = $(`<div id="html_e1dd2712f85a727f4be85fa58329fff4" style="width: 100.0%; height: 100.0%;">group_count: 2,   groups: ['Popular Front for the Liberation of Palestine (PFLP)', 'South Moluccans'],</div>`)[0];
+                popup_466528498dfe88669e860966c5cecdbc.setContent(html_e1dd2712f85a727f4be85fa58329fff4);
+            
+        
+
+        marker_46e74c1ef5aa25fdd9e7776c42bef938.bindPopup(popup_466528498dfe88669e860966c5cecdbc)
+        ;
+
+        
+    
+    
+            var marker_e034e1363bd6132491f018cd72a6ae06 = L.marker(
+                [4.0, 4.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_18cc5bee4a992dbceaa54ab02759f88a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ed3503e2d50c565b7dbf171ac601afc = $(`<div id="html_0ed3503e2d50c565b7dbf171ac601afc" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Croatian Nationalists'],</div>`)[0];
+                popup_18cc5bee4a992dbceaa54ab02759f88a.setContent(html_0ed3503e2d50c565b7dbf171ac601afc);
+            
+        
+
+        marker_e034e1363bd6132491f018cd72a6ae06.bindPopup(popup_18cc5bee4a992dbceaa54ab02759f88a)
+        ;
+
+        
+    
+    
+            var marker_f7d196b73019ac94a6614edd5a39cb4b = L.marker(
+                [-95.0, -95.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_9989ea167b06781bc2db10148bd9585e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2c2c0f062c458e947139cff1bd44fba = $(`<div id="html_b2c2c0f062c458e947139cff1bd44fba" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Front de Liberation du Quebec (FLQ)'],</div>`)[0];
+                popup_9989ea167b06781bc2db10148bd9585e.setContent(html_b2c2c0f062c458e947139cff1bd44fba);
+            
+        
+
+        marker_f7d196b73019ac94a6614edd5a39cb4b.bindPopup(popup_9989ea167b06781bc2db10148bd9585e)
+        ;
+
+        
+    
+    
+            var marker_07bf7e1bd5b9d6313d3e2ffe48b77d90 = L.marker(
+                [133.0, 133.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_52afdba698ba7f9132ed5310aa45eb67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4b490e2b883d007ed3538321fe0fa552 = $(`<div id="html_4b490e2b883d007ed3538321fe0fa552" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Croatian Nationalists'],</div>`)[0];
+                popup_52afdba698ba7f9132ed5310aa45eb67.setContent(html_4b490e2b883d007ed3538321fe0fa552);
+            
+        
+
+        marker_07bf7e1bd5b9d6313d3e2ffe48b77d90.bindPopup(popup_52afdba698ba7f9132ed5310aa45eb67)
+        ;
+
+        
+    
+    
+            var marker_5fb7a58145779dd5b3f2aa84ccf06b8e = L.marker(
+                [70.0, 70.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_cb26e7fe5beee4db34a05be1244728c3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_385dcb940a97836aad8a32aab6dd14c9 = $(`<div id="html_385dcb940a97836aad8a32aab6dd14c9" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Unknown'],</div>`)[0];
+                popup_cb26e7fe5beee4db34a05be1244728c3.setContent(html_385dcb940a97836aad8a32aab6dd14c9);
+            
+        
+
+        marker_5fb7a58145779dd5b3f2aa84ccf06b8e.bindPopup(popup_cb26e7fe5beee4db34a05be1244728c3)
+        ;
+
+        
+    
+    
+            var marker_621457c7a1dc6e050a789cf276a9cf19 = L.marker(
+                [30.0, 30.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_e0b5294723f635bd09198a815f8152c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_760963a94023f50a79946212a1454b34 = $(`<div id="html_760963a94023f50a79946212a1454b34" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Revolutionary Committee of Mozambique (COREMO)'],</div>`)[0];
+                popup_e0b5294723f635bd09198a815f8152c1.setContent(html_760963a94023f50a79946212a1454b34);
+            
+        
+
+        marker_621457c7a1dc6e050a789cf276a9cf19.bindPopup(popup_e0b5294723f635bd09198a815f8152c1)
+        ;
+
+        
+    
+    
+            var marker_10da6903dd43bcae424eb6f65be4b021 = L.marker(
+                [15.0, 15.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_162542b43872d519bb076613c5f75e4b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0114b70c1798a670ba9e21aea53817c1 = $(`<div id="html_0114b70c1798a670ba9e21aea53817c1" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Croatian Nationalists'],</div>`)[0];
+                popup_162542b43872d519bb076613c5f75e4b.setContent(html_0114b70c1798a670ba9e21aea53817c1);
+            
+        
+
+        marker_10da6903dd43bcae424eb6f65be4b021.bindPopup(popup_162542b43872d519bb076613c5f75e4b)
+        ;
+
+        
+    
+    
+            var marker_cebc09a2c0b7303bee80a396c23b3fe0 = L.marker(
+                [-84.0, -84.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_19c250e3194455e76039757ee8ec3dd5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1eaf54152c8bd4d7e81327f44e481202 = $(`<div id="html_1eaf54152c8bd4d7e81327f44e481202" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Unknown'],</div>`)[0];
+                popup_19c250e3194455e76039757ee8ec3dd5.setContent(html_1eaf54152c8bd4d7e81327f44e481202);
+            
+        
+
+        marker_cebc09a2c0b7303bee80a396c23b3fe0.bindPopup(popup_19c250e3194455e76039757ee8ec3dd5)
+        ;
+
+        
+    
+    
+            var marker_d5c3eeff630a0b6ae59d94986423403d = L.marker(
+                [105.0, 105.0],
+                {
+}
+            ).addTo(map_1dc417afbc357f3b48f99e163f865ac3);
+        
+    
+        var popup_c2983412013be2984cd24f5692d4e8d2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2763fa940c27d3c08169f12f52f43954 = $(`<div id="html_2763fa940c27d3c08169f12f52f43954" style="width: 100.0%; height: 100.0%;">group_count: 1,   groups: ['Unknown'],</div>`)[0];
+                popup_c2983412013be2984cd24f5692d4e8d2.setContent(html_2763fa940c27d3c08169f12f52f43954);
+            
+        
+
+        marker_d5c3eeff630a0b6ae59d94986423403d.bindPopup(popup_c2983412013be2984cd24f5692d4e8d2)
+        ;
+
+        
+    
+</script>
+</html>

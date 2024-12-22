@@ -1,9 +1,16 @@
 import folium
 import os
 
+from app.serices.country_cordinates import get_country_coordinates
+
 attacks_by_region_map_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'attacks_by_region.html')
 attacks_percentage_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'attacks_percentage.html')
 most_active_groups_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'most_active_groups.html')
+same_target_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'same_target.html')
+high_groups_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'high_groups.html')
+wide_influence_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'wide_influence.html')
+same_strartegys_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'same_strartegy.html')
+
 
 
 def attacks_by_region_to_map(attacks_by_regions):
@@ -64,3 +71,72 @@ def most_active_groups_to_map(most_active_groups: dict):
                                     f'num_attacks: {group["num_attacks"]}').add_to(map)
 
     map.save(most_active_groups_path)
+
+
+# 11
+
+def groups_with_same_target_to_mup(same_targets):
+    # חילוץ נקודת ההתחלה
+    initial_location = get_country_coordinates(same_targets[0]["country"])
+    map = folium.Map(location=initial_location)
+
+    for target in same_targets:
+        coordinates = get_country_coordinates(target["country"])
+        if coordinates and coordinates[0] and coordinates[1]:
+            folium.Marker(coordinates,
+                          popup=f'groups: {target['groups']}, \n type: {target['type']}').add_to(map)
+
+    map.save(same_target_path)
+
+
+# 14
+
+def same_strartegy_to_mup(same_strartegys):
+
+    # חילוץ נקודת ההתחלה
+    initial_location = get_country_coordinates(same_strartegys[0]["country"])
+    map = folium.Map(location=initial_location)
+
+    for target in same_strartegys:
+        coordinates = get_country_coordinates(target["country"])
+        if coordinates and coordinates[0] and coordinates[1]:
+            folium.Marker(coordinates,
+                          popup=f'groups: {target['groups']}, \n target: {target['target']}').add_to(map)
+
+    map.save(same_strartegys_path)
+
+# 16
+def high_groups_to_mup(high_groups):
+
+    # חילוץ נקודת ההתחלה
+    initial_location = get_country_coordinates(high_groups[0]["countries"][0]['name'])
+    map = folium.Map(location=initial_location)
+
+    for group in high_groups:
+        for country in group['countries']:
+            coordinates = get_country_coordinates(country['name'])
+            if coordinates and coordinates[0] and coordinates[1]:
+                folium.Marker(coordinates,
+                              popup=f'country_count: {group['country_count']}, \n group: {group['group']}, \n '
+                                    f'target_count: {group['target_count']}, \n type_c'
+                                    f'ount: {group['type_count']}').add_to(map)
+
+    map.save(high_groups_path)
+
+
+# 18
+def groups_with_wide_influence_to_mup(wide_influences):
+
+    # חילוץ נקודת ההתחלה
+    initial_location = get_country_coordinates(wide_influences[0]["country"])
+    map = folium.Map(location=initial_location)
+
+    for country in wide_influences:
+        coordinates = get_country_coordinates(country['country'])
+        if coordinates and coordinates[0] and coordinates[1]:
+            folium.Marker(coordinates,
+                          popup=f'group_count: {country['group_count']}, \n groups: {country['groups']},').add_to(map)
+
+    map.save(wide_influence_path)
+
+

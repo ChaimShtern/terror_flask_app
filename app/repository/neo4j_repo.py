@@ -24,6 +24,7 @@ def groups_with_same_strartegy():
                 return rel.target as target, collect(DISTINCT g.name) as groups, c.name as country
                 """
         res = session.run(query).data()
+        print(res)
         return t.pipe(
             res,
             list
@@ -34,9 +35,9 @@ def groups_with_same_strartegy():
 def groups_with_same_perpes():
     with driver.session() as session:
         query = """
-               match  (g:Group) -[rel:ATTACKED]- (c:Country)
-               return rel.target as target, collect(g.name) as groups, count(g.name) as count
-               """
+              match  (g:Group) -[rel:ATTACKED]- (c:Country)
+              return rel.target as target, collect(g.name) as groups, count(g.name) as count
+              """
         res = session.run(query).data()
         return t.pipe(
             res,
