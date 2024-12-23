@@ -2,7 +2,7 @@ from flask import Blueprint, jsonify, request, render_template
 
 from app.repository.neo4j_repo import groups_with_same_target, groups_with_same_strartegy, groups_with_same_perpes, \
     high_groups, groups_with_wide_influence
-from app.serices.json_to_map import groups_with_same_target_to_mup, high_groups_to_mup, same_strartegy_to_mup, \
+from app.services.json_to_map import groups_with_same_target_to_mup, high_groups_to_mup, same_strartegy_to_mup, \
     groups_with_wide_influence_to_mup
 
 neo4j_queries_bluprint = Blueprint("neo4j_queries", __name__)

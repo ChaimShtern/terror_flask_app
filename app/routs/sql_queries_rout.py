@@ -2,8 +2,8 @@ from flask import Blueprint, jsonify, request, render_template
 from app.db.database import session_maker
 from app.repository.stats_repo import most_deadly_attacks, most_attacked_groups, attacks_by_region, \
     attacks_percentage_change_by_region, most_active_groups_by_region
-from app.serices.json_to_map import attacks_by_region_to_map, attacks_percentage_to_map, most_active_groups_to_map
-from app.serices.models_to_json import deadly_attacks_to_json
+from app.services.json_to_map import attacks_by_region_to_map, attacks_percentage_to_map, most_active_groups_to_map
+from app.services.models_to_json import deadly_attacks_to_json
 
 sql_queries_bluprint = Blueprint("sql_queries", __name__)
 

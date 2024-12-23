@@ -1,4 +1,4 @@
-from app.serices.read_fille import find_coordinates_in_csv, countries_and_coordinates_path
+from app.services.read_fille import find_coordinates_in_csv, countries_and_coordinates_path
 
 
 def get_country_coordinates(country_name):

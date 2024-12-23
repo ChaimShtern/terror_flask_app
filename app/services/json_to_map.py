@@ -1,7 +1,7 @@
 import folium
 import os
 
-from app.serices.country_cordinates import get_country_coordinates
+from app.services.country_cordinates import get_country_coordinates
 
 attacks_by_region_map_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'attacks_by_region.html')
 attacks_percentage_path = os.path.join(os.path.dirname(__file__), '..', 'templates', 'attacks_percentage.html')
