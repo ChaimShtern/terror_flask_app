@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request, render_template
+from flask import Blueprint, jsonify, render_template
 
 from app.repository.neo4j_repo import groups_with_same_target, groups_with_same_strartegy, groups_with_same_perpes, \
     high_groups, groups_with_wide_influence
@@ -23,7 +23,6 @@ def get_groups_with_same_strartegy():
     same_strartegy = groups_with_same_strartegy()
     same_strartegy_to_mup(same_strartegy)
     return render_template('same_strartegy.html')
-
 
 
 # 15
@@ -52,4 +51,3 @@ def get_groups_with_wide_influence():
     groups_with_wide_influence_to_mup(wide_influence)
 
     return render_template('wide_influence.html')
-

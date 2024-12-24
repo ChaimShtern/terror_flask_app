@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request, render_template
+from flask import Blueprint, jsonify, render_template
 from app.db.database import session_maker
 from app.repository.stats_repo import most_deadly_attacks, most_attacked_groups, attacks_by_region, \
     attacks_percentage_change_by_region, most_active_groups_by_region
